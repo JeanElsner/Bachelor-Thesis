@@ -1,0 +1,16 @@
+\addcontentsline{toc}{chapter}{\protect Zusammenfassung}
+
+
+\chapter*{Zusammenfassung}
+
+Beim Fraunhofer-Teleskop am Observatorium Wendelstein der Universitäts-Sternwarte München (USM) handelt es sich um ein \SI{2}{\metre} Spiegelteleskop des Typs Ritchey-Chrétien mit einem Öffnungsverhältnis von $f/\num{7.8}$ in azimutaler Montierung. Das Teleskop erhält seinen Namen von dem deutschen Optiker und Physiker Joseph Fraunhofer und befindet sich in einer Höhe von \SI{1838}{\metre} auf dem Gipfel des Wendelstein. Im Jahr 2008 begann der Bau des Teleskops, mit dem Ziel, nicht nur eine adäquate Ausbildungsplattform für Studenten zu bieten, sondern auch konkurrenzfähige eigenständige Beobachtungsprogramme und unterstützende Messungen für Großteleskope wie dem Hobby-Eberly-Teleskop in Texas durchführen zu können\cite{aufruestung}.
+
+Seit der Übernahme des Betriebs vom Hersteller durch die USM am 13. November 2014 befindet sich das Teleskop im täglichen Betrieb. Zur Fokussierung des Teleskops wird der sekundäre Spiegel entlang der optischen Achse (z-Achse) mit einem Hexapod bewegt. Es wird eine Reihe von Aufnahmen (Fokusserie) mit unterschiedlichen z-Positionen gemacht und die Position mit der besten Bildqualität gewählt. Als Richtwert wird eine lineare Näherung der Temperatur- und Elevationsabhängigkeit der Optik verwendet\cite{commissioning}.
+
+Ziel dieser Arbeit ist es einerseits, die Fokusserien der Aufnahmen des vergangenen Jahres statistisch zu untersuchen und eine numerische Näherungsformel für die Spiegel-Position in Abhängigkeit von Temperatur und Elevation herzuleiten. Andererseits soll der Parameterraum der Metadaten des Teleskops auf weitere Korrelationen mit der Bildqualität untersucht werden. Zu diesem Zweck wurden Routinen programmiert, welche die Fokusserien reduzieren und analysieren. Zum Einsatz kam dabei die Programmiersprache Python, da hier bereits ein ausgiebiges Ökosystem an Programmbibliotheken für den wissenschaftlichen Bereich existiert.
+
+Das Ergebnis ist einerseits eine neue Formel, die hoffentlich den Vorgang der Fokussierung weiter optimieren kann, sowie ein Index der Transinformation aller Parameter, der auf unerwartete Korrelationen hin untersucht werden kann. Der komplette Code steht in einem Online-Repositorium mit Versionskontrolle zur Verfügung.
+\begin{mdframed}[style=emphasis]
+	\centering
+	\url{http://github.com/JeanElsner/focus-series}
+\end{mdframed}
